@@ -1,0 +1,32 @@
+[0.353s] Invoking command in '/home/vboxuser/RM_prac/build/turtlebot3_dqn': AMENT_PREFIX_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:/home/vboxuser/RM_prac/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vboxuser/RM_prac/build/turtlebot3_dqn/build --no-deps symlink_data
+[0.475s] running develop
+[0.544s] running egg_info
+[0.544s] creating turtlebot3_dqn.egg-info
+[0.544s] writing turtlebot3_dqn.egg-info/PKG-INFO
+[0.544s] writing dependency_links to turtlebot3_dqn.egg-info/dependency_links.txt
+[0.544s] writing entry points to turtlebot3_dqn.egg-info/entry_points.txt
+[0.544s] writing requirements to turtlebot3_dqn.egg-info/requires.txt
+[0.544s] writing top-level names to turtlebot3_dqn.egg-info/top_level.txt
+[0.544s] writing manifest file 'turtlebot3_dqn.egg-info/SOURCES.txt'
+[0.546s] reading manifest file 'turtlebot3_dqn.egg-info/SOURCES.txt'
+[0.546s] writing manifest file 'turtlebot3_dqn.egg-info/SOURCES.txt'
+[0.547s] running build_ext
+[0.547s] Creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3-dqn.egg-link (link to .)
+[0.547s] Installing action_graph script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing dqn_agent script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing dqn_coppeliasim script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing dqn_environment script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing dqn_gazebo script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing dqn_test script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] Installing result_graph script to /home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.548s] 
+[0.548s] Installed /home/vboxuser/RM_prac/build/turtlebot3_dqn
+[0.548s] running symlink_data
+[0.548s] creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/ament_index
+[0.548s] creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/ament_index/resource_index
+[0.548s] creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/ament_index/resource_index/packages
+[0.548s] symbolically linking /home/vboxuser/RM_prac/build/turtlebot3_dqn/resource/turtlebot3_dqn -> /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/ament_index/resource_index/packages
+[0.548s] symbolically linking /home/vboxuser/RM_prac/build/turtlebot3_dqn/package.xml -> /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn
+[0.548s] creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/launch
+[0.548s] creating /home/vboxuser/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/saved_models
+[0.578s] Invoked command in '/home/vboxuser/RM_prac/build/turtlebot3_dqn' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs LD_LIBRARY_PATH=/home/vboxuser/RM_prac/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:/home/vboxuser/RM_prac/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vboxuser/RM_prac/build/turtlebot3_dqn/build --no-deps symlink_data

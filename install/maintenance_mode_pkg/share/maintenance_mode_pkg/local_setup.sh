@@ -1,0 +1,1 @@
+/home/vboxuser/RM_prac/build/maintenance_mode_pkg/ament_cmake_environment_hooks/local_setup.sh

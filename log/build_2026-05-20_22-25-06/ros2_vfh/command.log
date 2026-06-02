@@ -1,0 +1,6 @@
+Invoking command in '/home/vboxuser/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/ros2_vfh -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/ros2_vfh
+Invoked command in '/home/vboxuser/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/ros2_vfh -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/ros2_vfh
+Invoking command in '/home/vboxuser/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/ros2_vfh -- -j18 -l18
+Invoked command in '/home/vboxuser/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/ros2_vfh -- -j18 -l18
+Invoking command in '/home/vboxuser/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/ros2_vfh
+Invoked command in '/home/vboxuser/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/ros2_vfh

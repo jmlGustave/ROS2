@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/vboxuser/RM_prac/build/intro_ros_pkg/publisher" "/home/vboxuser/RM_prac/build/intro_ros_pkg/subscriber" "TARGETS" "publisher" "subscriber" "DESTINATION" "lib/intro_ros_pkg")

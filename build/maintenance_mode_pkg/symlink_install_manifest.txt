@@ -1,0 +1,16 @@
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/lib/maintenance_mode_pkg/maintenance_mode
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/package_run_dependencies/maintenance_mode_pkg
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/parent_prefix_path/maintenance_mode_pkg
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/ament_prefix_path.sh
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/ament_prefix_path.dsv
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/path.sh
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/path.dsv
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.bash
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.sh
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.zsh
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.dsv
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.dsv
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/packages/maintenance_mode_pkg
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/cmake/maintenance_mode_pkgConfig.cmake
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/cmake/maintenance_mode_pkgConfig-version.cmake
+/home/vboxuser/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.xml

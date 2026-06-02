@@ -100,8 +100,8 @@ class DQNTest(Node):
         if not use_gpu:
             self.tf.config.set_visible_devices([], 'GPU')
 
-        self.state_size = 26
-        self.action_size = 5
+        self.state_size = 27
+        self.action_size = 15
 
         self.memory = collections.deque(maxlen=1000000)
 

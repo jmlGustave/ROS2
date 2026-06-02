@@ -1,0 +1,75 @@
+[0.018s] Invoking command in '/home/vboxuser/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/transformations_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/transformations_pkg
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.085s] -- The CXX compiler identification is GNU 11.4.0
+[0.089s] -- Detecting C compiler ABI info
+[0.142s] -- Detecting C compiler ABI info - done
+[0.146s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.149s] -- Detecting CXX compiler ABI info
+[0.197s] -- Detecting CXX compiler ABI info - done
+[0.200s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.200s] -- Detecting CXX compile features
+[0.201s] -- Detecting CXX compile features - done
+[0.202s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.296s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.344s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.360s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.382s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.385s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.390s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.404s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.425s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.425s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.473s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.487s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.510s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.514s] -- Looking for pthread.h
+[0.571s] -- Looking for pthread.h - found
+[0.572s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.630s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.631s] -- Found Threads: TRUE  
+[0.663s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.669s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.673s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.679s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.679s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.680s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.718s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.769s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.769s] -- Configured cppcheck include dirs: 
+[0.769s] -- Configured cppcheck exclude dirs and/or files: 
+[0.769s] -- Added test 'lint_cmake' to check CMake code style
+[0.769s] -- Added test 'uncrustify' to check C / C++ code style
+[0.769s] -- Configured uncrustify additional arguments: 
+[0.769s] -- Added test 'xmllint' to check XML markup files
+[0.769s] -- Configuring done
+[0.774s] -- Generating done
+[0.776s] -- Build files have been written to: /home/vboxuser/RM_prac/build/transformations_pkg
+[0.783s] Invoked command in '/home/vboxuser/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/transformations_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/transformations_pkg
+[0.784s] Invoking command in '/home/vboxuser/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/transformations_pkg -- -j18 -l18
+[0.828s] [ 50%] [32mBuilding CXX object CMakeFiles/transform_listener.dir/src/transform_listener.cpp.o[0m
+[7.906s] [100%] [32m[1mLinking CXX executable transform_listener[0m
+[8.162s] [100%] Built target transform_listener
+[8.172s] Invoked command in '/home/vboxuser/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/transformations_pkg -- -j18 -l18
+[8.174s] Invoking command in '/home/vboxuser/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/transformations_pkg
+[8.180s] -- Install configuration: ""
+[8.180s] -- Execute custom install script
+[8.181s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/lib/transformations_pkg/transform_listener
+[8.191s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/ament_index/resource_index/package_run_dependencies/transformations_pkg
+[8.197s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/ament_index/resource_index/parent_prefix_path/transformations_pkg
+[8.204s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/ament_prefix_path.sh
+[8.214s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/ament_prefix_path.dsv
+[8.221s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/path.sh
+[8.229s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/path.dsv
+[8.237s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.bash
+[8.246s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.sh
+[8.254s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.zsh
+[8.262s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.dsv
+[8.270s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/package.dsv
+[8.277s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/ament_index/resource_index/packages/transformations_pkg
+[8.285s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/cmake/transformations_pkgConfig.cmake
+[8.292s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/cmake/transformations_pkgConfig-version.cmake
+[8.299s] -- Symlinking: /home/vboxuser/RM_prac/install/transformations_pkg/share/transformations_pkg/package.xml
+[8.308s] Invoked command in '/home/vboxuser/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/transformations_pkg

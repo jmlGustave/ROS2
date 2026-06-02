@@ -142,8 +142,8 @@ class DQNAgent(Node):
             self.tf.config.set_visible_devices([], 'GPU')
 
         self.train_mode = True
-        self.state_size = 26
-        self.action_size = 5
+        self.state_size = 27
+        self.action_size = 15
 
         self.done = False
         self.succeed = False
@@ -226,7 +226,7 @@ class DQNAgent(Node):
             score = 0
             sum_max_q = 0.0
 
-            time.sleep(1.0)
+            time.sleep(0.2)
 
             while True:
                 local_step += 1
@@ -274,7 +274,7 @@ class DQNAgent(Node):
                     param_dictionary = dict(zip(param_keys, param_values))
                     break
 
-                time.sleep(0.01)
+                time.sleep(0.001)
 
             if self.train_mode:
                 if episode % 100 == 0:
@@ -400,7 +400,8 @@ class DQNAgent(Node):
             current_q_values = current_qvalues_list[index]
 
             if not done:
-                future_reward = numpy.max(next_qvalues_list[index])
+                best_action = numpy.argmax(current_qvalues_list[index])
+                future_reward = next_qvalues_list[index][best_action]
                 desired_q = reward + self.discount_factor * future_reward
             else:
                 desired_q = reward

@@ -48,7 +48,12 @@ class RLEnvironment(Node):
         self.robot_pose_x = 0.0
         self.robot_pose_y = 0.0
 
-        self.action_size = 5
+        #way-points
+        self.waypoints = []         
+        self.current_waypoint_idx = 0
+        self.waypoints_reached = 0
+
+        self.action_size = 15
         self.max_step = 800
 
         self.done = False
@@ -65,7 +70,11 @@ class RLEnvironment(Node):
 
         self.local_step = 0
         self.stop_cmd_vel_timer = None
+        self.linear_vel  = [0.15, 0.10, 0.05]
         self.angular_vel = [1.5, 0.75, 0.0, -0.75, -1.5]
+
+        self.all_waypoints_done = False
+        self.prev_goal_distance = 1.0
         
         qos = QoSProfile(depth=10)
 
@@ -132,11 +141,16 @@ class RLEnvironment(Node):
         if not response_goal.success:
             self.get_logger().error('initialize environment request failed')
         else:
-            self.goal_pose_x = response_goal.pose_x
-            self.goal_pose_y = response_goal.pose_y
-            self.get_logger().info(
-                'goal initialized at [%f, %f]' % (self.goal_pose_x, self.goal_pose_y)
-            )
+            # primer waypoint
+            self.waypoints = [
+                (response_goal.pose_x, response_goal.pose_y),
+                (response_goal.pose_x + 1.0, response_goal.pose_y + 0.5),
+                (response_goal.pose_x - 0.5, response_goal.pose_y + 1.0),
+            ]
+            self.current_waypoint_idx = 0
+            self.goal_pose_x = self.waypoints[0][0]
+            self.goal_pose_y = self.waypoints[0][1]
+            self.get_logger().info(f'Waypoints initialized: {self.waypoints}')
 
         return response
 
@@ -229,20 +243,42 @@ class RLEnvironment(Node):
         state = []
         state.append(float(self.goal_distance))
         state.append(float(self.goal_angle))
-        for var in self.front_ranges:
-            state.append(float(var))
+        
+        if len(self.scan_ranges) > 0:
+            for i in range(24):
+                idx = int(i * len(self.scan_ranges) / 24)
+                state.append(float(self.scan_ranges[idx]))
+        else:
+            state.extend([3.5] * 24)
+            
+        num_waypoints = max(len(self.waypoints), 1)
+        state.append(float(self.current_waypoint_idx) / float(num_waypoints))
         self.local_step += 1
-
         if self.goal_distance < 0.20:
-            self.get_logger().info('Goal Reached')
-            self.succeed = True
-            self.done = True
-            if ROS_DISTRO == 'humble':
-                self.cmd_vel_pub.publish(Twist())
+            self.get_logger().info(
+                f'Waypoint {self.current_waypoint_idx + 1}/{len(self.waypoints)} reached!')
+            self.current_waypoint_idx += 1
+            self.waypoints_reached += 1
+
+            if self.current_waypoint_idx >= len(self.waypoints):
+                # todos los waypoints completados
+                self.all_waypoints_done = True
+                self.get_logger().info('All waypoints completed!')
+                self.succeed = True
+                self.done = True
+                self.current_waypoint_idx = 0
+                if ROS_DISTRO == 'humble':
+                    self.cmd_vel_pub.publish(Twist())
+                else:
+                    self.cmd_vel_pub.publish(TwistStamped())
+                self.local_step = 0
+                self.call_task_succeed()
             else:
-                self.cmd_vel_pub.publish(TwistStamped())
-            self.local_step = 0
-            self.call_task_succeed()
+                # avanzar al siguiente waypoint
+                self.goal_pose_x = self.waypoints[self.current_waypoint_idx][0]
+                self.goal_pose_y = self.waypoints[self.current_waypoint_idx][1]
+                self.get_logger().info(
+                    f'Next waypoint: [{self.goal_pose_x}, {self.goal_pose_y}]')
 
         if self.min_obstacle_distance < 0.15:
             self.get_logger().info('Collision happened')
@@ -306,14 +342,21 @@ class RLEnvironment(Node):
     def calculate_reward(self):
         yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
         obstacle_reward = self.compute_weighted_obstacle_reward()
+        
+        # progreso hacia el waypoint activo
+        progress_reward = self.prev_goal_distance - self.goal_distance
+        self.prev_goal_distance = self.goal_distance
+        
+        # penalización por paso (evita dar vueltas)
+        step_penalty = -0.1
 
-        print('directional_reward: %f, obstacle_reward: %f' % (yaw_reward, obstacle_reward))
-        reward = yaw_reward + obstacle_reward
+        reward = yaw_reward + obstacle_reward + progress_reward + step_penalty
 
         if self.succeed:
-            reward = 100.0
+            reward = 200.0 if self.all_waypoints_done else 50.0
+            self.all_waypoints_done = False
         elif self.fail:
-            reward = -50.0
+            reward = -100.0
 
         return reward
 
@@ -321,8 +364,10 @@ class RLEnvironment(Node):
         action = request.action
         if ROS_DISTRO == 'humble':
             msg = Twist()
-            msg.linear.x = 0.2
-            msg.angular.z = self.angular_vel[action]
+            linear_idx  = action // 5
+            angular_idx = action % 5
+            msg.linear.x  = self.linear_vel[linear_idx]
+            msg.angular.z = self.angular_vel[angular_idx]
         else:
             msg = TwistStamped()
             msg.twist.linear.x = 0.2
