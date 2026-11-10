@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/navigation_pkg/launch/navigation.launch.py
+/root/RM_prac/src/navigation_pkg/launch/navigation.launch.py

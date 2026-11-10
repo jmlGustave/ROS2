@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/ros2_vfh
+CMAKE_SOURCE_DIR = /root/RM_prac/src/ros2_vfh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/ros2_vfh
+CMAKE_BINARY_DIR = /root/RM_prac/build/ros2_vfh
 
 # Utility rule file for ros2_vfh_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ros2_vfh_uninstall.dir/compiler_depend.make
 include CMakeFiles/ros2_vfh_uninstall.dir/progress.make
 
 CMakeFiles/ros2_vfh_uninstall:
-	/usr/bin/cmake -P /home/vboxuser/RM_prac/build/ros2_vfh/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/RM_prac/build/ros2_vfh/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ros2_vfh_uninstall: CMakeFiles/ros2_vfh_uninstall
 ros2_vfh_uninstall: CMakeFiles/ros2_vfh_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ros2_vfh_uninstall.dir/clean:
 .PHONY : CMakeFiles/ros2_vfh_uninstall.dir/clean
 
 CMakeFiles/ros2_vfh_uninstall.dir/depend:
-	cd /home/vboxuser/RM_prac/build/ros2_vfh && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/ros2_vfh /home/vboxuser/RM_prac/src/ros2_vfh /home/vboxuser/RM_prac/build/ros2_vfh /home/vboxuser/RM_prac/build/ros2_vfh /home/vboxuser/RM_prac/build/ros2_vfh/CMakeFiles/ros2_vfh_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/ros2_vfh && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/ros2_vfh /root/RM_prac/src/ros2_vfh /root/RM_prac/build/ros2_vfh /root/RM_prac/build/ros2_vfh /root/RM_prac/build/ros2_vfh/CMakeFiles/ros2_vfh_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ros2_vfh_uninstall.dir/depend
 

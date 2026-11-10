@@ -1,9 +1,9 @@
 {
   "package_name": "pure_pursuit_pkg",
-  "output_dir": "/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_typesupport_introspection_cpp/pure_pursuit_pkg",
+  "output_dir": "/root/RM_prac/build/pure_pursuit_pkg/rosidl_typesupport_introspection_cpp/pure_pursuit_pkg",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_adapter/pure_pursuit_pkg:msg/WayPointPath.idl"
+    "/root/RM_prac/build/pure_pursuit_pkg/rosidl_adapter/pure_pursuit_pkg:msg/WayPointPath.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -80,7 +80,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
-    "/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_adapter/pure_pursuit_pkg/msg/WayPointPath.idl",
+    "/root/RM_prac/build/pure_pursuit_pkg/rosidl_adapter/pure_pursuit_pkg/msg/WayPointPath.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

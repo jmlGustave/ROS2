@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_pure_pursuit_pkg -DROS_PACKAGE_NAME=\"pure_pursuit_pkg\"
 
-C_INCLUDES = -I/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_generator_c -I/home/vboxuser/RM_prac/src/pure_pursuit_pkg/include -I/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_generator_cpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/root/RM_prac/build/pure_pursuit_pkg/rosidl_generator_c -I/root/RM_prac/src/pure_pursuit_pkg/include -I/root/RM_prac/build/pure_pursuit_pkg/rosidl_generator_cpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -fPIC -Wall -std=gnu11
 

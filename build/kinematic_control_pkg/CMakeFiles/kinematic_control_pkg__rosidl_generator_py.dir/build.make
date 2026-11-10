@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/kinematic_control_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/kinematic_control_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/kinematic_control_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/kinematic_control_pkg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/flags.make
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o: CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/flags.make
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o: rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o: CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o -MF CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o.d -o CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o -c /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o -MF CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o.d -o CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o -c /root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c
 
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c > CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c > CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.i
 
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c -o CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c -o CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.s
 
 # Object files for target kinematic_control_pkg__rosidl_generator_py
 kinematic_control_pkg__rosidl_generator_py_OBJECTS = \
@@ -108,7 +108,7 @@ rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_gener
 rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so: CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -120,6 +120,6 @@ CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/clean
 
 CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/depend:
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/depend
 

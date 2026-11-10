@@ -254,7 +254,7 @@ class RLEnvironment(Node):
         num_waypoints = max(len(self.waypoints), 1)
         state.append(float(self.current_waypoint_idx) / float(num_waypoints))
         self.local_step += 1
-        if self.goal_distance < 0.20:
+        if self.goal_distance < 0.30:
             self.get_logger().info(
                 f'Waypoint {self.current_waypoint_idx + 1}/{len(self.waypoints)} reached!')
             self.current_waypoint_idx += 1
@@ -343,17 +343,24 @@ class RLEnvironment(Node):
         yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
         obstacle_reward = self.compute_weighted_obstacle_reward()
         
-        # progreso hacia el waypoint activo
+        # Progreso hacia el waypoint activo
         progress_reward = self.prev_goal_distance - self.goal_distance
         self.prev_goal_distance = self.goal_distance
         
-        # penalización por paso (evita dar vueltas)
-        step_penalty = -0.1
-
+        # Penalización por paso (evita dar vueltas)
+        step_penalty = -0.15
+        if self.goal_distance < 0.5:
+            progress_reward += 3.5 
+        
+        # --- AQUÍ ESTABA EL ERROR: calculamos primero el premio base ---
         reward = yaw_reward + obstacle_reward + progress_reward + step_penalty
+        
+        # --- AQUÍ APLICAMOS TU PENALIZACIÓN ---
+        if self.min_obstacle_distance < 0.15:
+            reward -= 1.5
 
         if self.succeed:
-            reward = 200.0 if self.all_waypoints_done else 50.0
+            reward = 300.0 if self.all_waypoints_done else 50.0
             self.all_waypoints_done = False
         elif self.fail:
             reward = -100.0

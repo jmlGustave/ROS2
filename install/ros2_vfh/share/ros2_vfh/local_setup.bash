@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/ros2_vfh/ament_cmake_environment_hooks/local_setup.bash
+/root/RM_prac/build/ros2_vfh/ament_cmake_environment_hooks/local_setup.bash

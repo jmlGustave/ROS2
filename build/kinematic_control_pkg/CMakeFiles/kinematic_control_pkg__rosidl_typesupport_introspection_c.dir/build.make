@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/kinematic_control_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/kinematic_control_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/kinematic_control_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/kinematic_control_pkg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/depend.make
@@ -142,8 +142,8 @@ rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__r
 rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c: rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c
@@ -151,16 +151,16 @@ rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__t
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o: CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o: rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o: CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o -MF CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o.d -o CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o -c /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o -MF CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o.d -o CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o -c /root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c
 
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c > CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c > CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.i
 
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c -o CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c -o CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.s
 
 # Object files for target kinematic_control_pkg__rosidl_typesupport_introspection_c
 kinematic_control_pkg__rosidl_typesupport_introspection_c_OBJECTS = \
@@ -182,7 +182,7 @@ libkinematic_control_pkg__rosidl_typesupport_introspection_c.so: /opt/ros/humble
 libkinematic_control_pkg__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libkinematic_control_pkg__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libkinematic_control_pkg__rosidl_typesupport_introspection_c.so: CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libkinematic_control_pkg__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libkinematic_control_pkg__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -195,6 +195,6 @@ CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h
 CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/depend
 

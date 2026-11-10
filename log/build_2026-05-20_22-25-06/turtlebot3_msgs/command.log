@@ -1,6 +1,0 @@
-Invoking command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/turtlebot3_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/turtlebot3_msgs
-Invoked command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/RM_prac/src/turtlebot3_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vboxuser/RM_prac/install/turtlebot3_msgs
-Invoking command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/turtlebot3_msgs -- -j18 -l18
-Invoked command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/RM_prac/build/turtlebot3_msgs -- -j18 -l18
-Invoking command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/turtlebot3_msgs
-Invoked command in '/home/vboxuser/RM_prac/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/RM_prac/build/turtlebot3_msgs

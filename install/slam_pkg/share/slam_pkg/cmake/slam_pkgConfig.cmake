@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake
+/root/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake

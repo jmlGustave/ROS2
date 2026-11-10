@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/slam_pkg/launch/localization.launch.py
+/root/RM_prac/src/slam_pkg/launch/localization.launch.py

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/kinematic_control_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/kinematic_control_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/kinematic_control_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/kinematic_control_pkg
 
 # Utility rule file for kinematic_control_pkg__rs.
 
@@ -150,8 +150,8 @@ rosidl_generator_rs/kinematic_control_pkg/rust/src/lib.rs: /opt/ros/humble/share
 rosidl_generator_rs/kinematic_control_pkg/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_rs/kinematic_control_pkg/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/kinematic_control_pkg/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
+	cd /root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /root/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/kinematic_control_pkg/rust/build.rs: rosidl_generator_rs/kinematic_control_pkg/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/kinematic_control_pkg/rust/build.rs
@@ -179,10 +179,10 @@ kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/build: kinema
 .PHONY : kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/build
 
 kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/clean:
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs && $(CMAKE_COMMAND) -P CMakeFiles/kinematic_control_pkg__rs.dir/cmake_clean.cmake
+	cd /root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs && $(CMAKE_COMMAND) -P CMakeFiles/kinematic_control_pkg__rs.dir/cmake_clean.cmake
 .PHONY : kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/clean
 
 kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/depend:
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs /home/vboxuser/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs /root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinematic_control_pkg__rs/CMakeFiles/kinematic_control_pkg__rs.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/intro_ros_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/intro_ros_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/intro_ros_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/intro_ros_pkg
 
 # Utility rule file for intro_ros_pkg_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/intro_ros_pkg_uninstall.dir/compiler_depend.make
 include CMakeFiles/intro_ros_pkg_uninstall.dir/progress.make
 
 CMakeFiles/intro_ros_pkg_uninstall:
-	/usr/bin/cmake -P /home/vboxuser/RM_prac/build/intro_ros_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/RM_prac/build/intro_ros_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 intro_ros_pkg_uninstall: CMakeFiles/intro_ros_pkg_uninstall
 intro_ros_pkg_uninstall: CMakeFiles/intro_ros_pkg_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/intro_ros_pkg_uninstall.dir/clean:
 .PHONY : CMakeFiles/intro_ros_pkg_uninstall.dir/clean
 
 CMakeFiles/intro_ros_pkg_uninstall.dir/depend:
-	cd /home/vboxuser/RM_prac/build/intro_ros_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/intro_ros_pkg /home/vboxuser/RM_prac/src/intro_ros_pkg /home/vboxuser/RM_prac/build/intro_ros_pkg /home/vboxuser/RM_prac/build/intro_ros_pkg /home/vboxuser/RM_prac/build/intro_ros_pkg/CMakeFiles/intro_ros_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/intro_ros_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/intro_ros_pkg /root/RM_prac/src/intro_ros_pkg /root/RM_prac/build/intro_ros_pkg /root/RM_prac/build/intro_ros_pkg /root/RM_prac/build/intro_ros_pkg/CMakeFiles/intro_ros_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/intro_ros_pkg_uninstall.dir/depend
 

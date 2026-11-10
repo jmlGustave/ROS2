@@ -1,0 +1,58 @@
+[0.014s] Invoking command in '/root/RM_prac/build/upv_maps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /root/RM_prac/src/upv_maps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RM_prac/install/upv_maps_pkg
+[0.100s] -- The C compiler identification is GNU 11.4.0
+[0.173s] -- The CXX compiler identification is GNU 11.4.0
+[0.177s] -- Detecting C compiler ABI info
+[0.222s] -- Detecting C compiler ABI info - done
+[0.225s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.226s] -- Detecting C compile features
+[0.226s] -- Detecting C compile features - done
+[0.227s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.278s] -- Detecting CXX compile features
+[0.278s] -- Detecting CXX compile features - done
+[0.280s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.356s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.391s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.403s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.448s] -- Added test 'lint_cmake' to check CMake code style
+[0.448s] -- Added test 'xmllint' to check XML markup files
+[0.449s] -- Configuring done
+[0.451s] -- Generating done
+[0.452s] -- Build files have been written to: /root/RM_prac/build/upv_maps_pkg
+[0.456s] Invoked command in '/root/RM_prac/build/upv_maps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /root/RM_prac/src/upv_maps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RM_prac/install/upv_maps_pkg
+[0.457s] Invoking command in '/root/RM_prac/build/upv_maps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /root/RM_prac/build/upv_maps_pkg -- -j20 -l20
+[0.483s] Invoked command in '/root/RM_prac/build/upv_maps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /root/RM_prac/build/upv_maps_pkg -- -j20 -l20
+[0.489s] Invoking command in '/root/RM_prac/build/upv_maps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /root/RM_prac/build/upv_maps_pkg
+[0.493s] -- Install configuration: ""
+[0.493s] -- Execute custom install script
+[0.494s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/coppeliasim/coppeliasim_map.pgm
+[0.500s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/coppeliasim/coppeliasim_map.yaml
+[0.505s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/coppeliasim/speed_mask_coppeliasim_map.pgm
+[0.510s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/coppeliasim/speed_mask_coppeliasim_map.yaml
+[0.517s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_aula_map.pgm
+[0.521s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_aula_map.yaml
+[0.526s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_aula_room_map.pgm
+[0.530s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_aula_room_map.yaml
+[0.535s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_room_map.pgm
+[0.541s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/disa/simulacion2_room_map.yaml
+[0.547s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/etsinf/lab_map.pgm
+[0.552s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/etsinf/lab_map.yaml
+[0.558s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/etsinf/speed_mask_lab_map.pgm
+[0.563s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/maps/etsinf/speed_mask_lab_map.yaml
+[0.568s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/ament_index/resource_index/package_run_dependencies/upv_maps_pkg
+[0.573s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/ament_index/resource_index/parent_prefix_path/upv_maps_pkg
+[0.579s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/environment/ament_prefix_path.sh
+[0.583s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/environment/ament_prefix_path.dsv
+[0.589s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/environment/path.sh
+[0.595s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/environment/path.dsv
+[0.601s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/local_setup.bash
+[0.606s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/local_setup.sh
+[0.611s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/local_setup.zsh
+[0.616s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/local_setup.dsv
+[0.620s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.dsv
+[0.626s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/ament_index/resource_index/packages/upv_maps_pkg
+[0.631s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/cmake/upv_maps_pkgConfig.cmake
+[0.638s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/cmake/upv_maps_pkgConfig-version.cmake
+[0.643s] -- Symlinking: /root/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.xml
+[0.650s] Invoked command in '/root/RM_prac/build/upv_maps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /root/RM_prac/build/upv_maps_pkg

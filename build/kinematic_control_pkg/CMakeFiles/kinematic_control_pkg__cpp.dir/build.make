@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/kinematic_control_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/kinematic_control_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/kinematic_control_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/kinematic_control_pkg
 
 # Utility rule file for kinematic_control_pkg__cpp.
 
@@ -153,8 +153,8 @@ rosidl_generator_cpp/kinematic_control_pkg/msg/reference.hpp: /opt/ros/humble/sh
 rosidl_generator_cpp/kinematic_control_pkg/msg/reference.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/kinematic_control_pkg/msg/reference.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/kinematic_control_pkg/msg/reference.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/RM_prac/build/kinematic_control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/kinematic_control_pkg/msg/detail/reference__builder.hpp: rosidl_generator_cpp/kinematic_control_pkg/msg/reference.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/kinematic_control_pkg/msg/detail/reference__builder.hpp
@@ -186,6 +186,6 @@ CMakeFiles/kinematic_control_pkg__cpp.dir/clean:
 .PHONY : CMakeFiles/kinematic_control_pkg__cpp.dir/clean
 
 CMakeFiles/kinematic_control_pkg__cpp.dir/depend:
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kinematic_control_pkg__cpp.dir/depend
 

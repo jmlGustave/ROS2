@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/maintenance_mode_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/maintenance_mode_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/maintenance_mode_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/maintenance_mode_pkg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/maintenance_mode.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/maintenance_mode.dir/progress.make
 include CMakeFiles/maintenance_mode.dir/flags.make
 
 CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o: CMakeFiles/maintenance_mode.dir/flags.make
-CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o: /home/vboxuser/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp
+CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o: /root/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp
 CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o: CMakeFiles/maintenance_mode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/RM_prac/build/maintenance_mode_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o -MF CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o.d -o CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o -c /home/vboxuser/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/RM_prac/build/maintenance_mode_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o -MF CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o.d -o CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.o -c /root/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp
 
 CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp > CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp > CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.i
 
 CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp -o CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/RM_prac/src/maintenance_mode_pkg/src/maintenance_mode.cpp -o CMakeFiles/maintenance_mode.dir/src/maintenance_mode.cpp.s
 
 # Object files for target maintenance_mode
 maintenance_mode_OBJECTS = \
@@ -104,12 +104,12 @@ maintenance_mode: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c
 maintenance_mode: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
 maintenance_mode: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
 maintenance_mode: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_c.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_cpp.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_py.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_c.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_cpp.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_py.so
 maintenance_mode: /opt/ros/humble/lib/liblibstatistics_collector.so
 maintenance_mode: /opt/ros/humble/lib/librcl.so
 maintenance_mode: /opt/ros/humble/lib/librmw_implementation.so
@@ -182,10 +182,10 @@ maintenance_mode: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupp
 maintenance_mode: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 maintenance_mode: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 maintenance_mode: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_c.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_c.so
 maintenance_mode: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 maintenance_mode: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-maintenance_mode: /home/vboxuser/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_c.so
+maintenance_mode: /root/RM_prac/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_c.so
 maintenance_mode: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 maintenance_mode: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 maintenance_mode: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
@@ -203,7 +203,7 @@ maintenance_mode: /opt/ros/humble/lib/librosidl_runtime_c.so
 maintenance_mode: /opt/ros/humble/lib/librcpputils.so
 maintenance_mode: /opt/ros/humble/lib/librcutils.so
 maintenance_mode: CMakeFiles/maintenance_mode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/RM_prac/build/maintenance_mode_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable maintenance_mode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/RM_prac/build/maintenance_mode_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable maintenance_mode"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/maintenance_mode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -215,6 +215,6 @@ CMakeFiles/maintenance_mode.dir/clean:
 .PHONY : CMakeFiles/maintenance_mode.dir/clean
 
 CMakeFiles/maintenance_mode.dir/depend:
-	cd /home/vboxuser/RM_prac/build/maintenance_mode_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/maintenance_mode_pkg /home/vboxuser/RM_prac/src/maintenance_mode_pkg /home/vboxuser/RM_prac/build/maintenance_mode_pkg /home/vboxuser/RM_prac/build/maintenance_mode_pkg /home/vboxuser/RM_prac/build/maintenance_mode_pkg/CMakeFiles/maintenance_mode.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/maintenance_mode_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/maintenance_mode_pkg /root/RM_prac/src/maintenance_mode_pkg /root/RM_prac/build/maintenance_mode_pkg /root/RM_prac/build/maintenance_mode_pkg /root/RM_prac/build/maintenance_mode_pkg/CMakeFiles/maintenance_mode.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/maintenance_mode.dir/depend
 

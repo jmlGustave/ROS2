@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/pure_pursuit_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/pure_pursuit_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/pure_pursuit_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/pure_pursuit_pkg
 
 # Utility rule file for pure_pursuit_pkg__cpp.
 
@@ -153,8 +153,8 @@ rosidl_generator_cpp/pure_pursuit_pkg/msg/way_point_path.hpp: /opt/ros/humble/sh
 rosidl_generator_cpp/pure_pursuit_pkg/msg/way_point_path.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/pure_pursuit_pkg/msg/way_point_path.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/pure_pursuit_pkg/msg/way_point_path.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vboxuser/RM_prac/build/pure_pursuit_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/RM_prac/build/pure_pursuit_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/RM_prac/build/pure_pursuit_pkg/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/pure_pursuit_pkg/msg/detail/way_point_path__builder.hpp: rosidl_generator_cpp/pure_pursuit_pkg/msg/way_point_path.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pure_pursuit_pkg/msg/detail/way_point_path__builder.hpp
@@ -186,6 +186,6 @@ CMakeFiles/pure_pursuit_pkg__cpp.dir/clean:
 .PHONY : CMakeFiles/pure_pursuit_pkg__cpp.dir/clean
 
 CMakeFiles/pure_pursuit_pkg__cpp.dir/depend:
-	cd /home/vboxuser/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg/CMakeFiles/pure_pursuit_pkg__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg/CMakeFiles/pure_pursuit_pkg__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pure_pursuit_pkg__cpp.dir/depend
 

@@ -1,0 +1,80 @@
+[0.013s] Invoking command in '/root/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /root/RM_prac/src/ros2_vfh -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RM_prac/install/ros2_vfh
+[0.105s] -- The C compiler identification is GNU 11.4.0
+[0.172s] -- The CXX compiler identification is GNU 11.4.0
+[0.178s] -- Detecting C compiler ABI info
+[0.223s] -- Detecting C compiler ABI info - done
+[0.227s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.227s] -- Detecting C compile features
+[0.227s] -- Detecting C compile features - done
+[0.229s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.289s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.289s] -- Detecting CXX compile features
+[0.290s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.382s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.427s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.444s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.466s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.468s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.472s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.477s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.503s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.506s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.551s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.566s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.593s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.598s] -- Looking for pthread.h
+[0.646s] -- Looking for pthread.h - found
+[0.646s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.688s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.689s] -- Found Threads: TRUE  
+[0.712s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.723s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.730s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.730s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.731s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.771s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.778s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.786s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[0.791s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.844s] -- Configuring done
+[0.853s] -- Generating done
+[0.855s] -- Build files have been written to: /root/RM_prac/build/ros2_vfh
+[0.868s] Invoked command in '/root/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /root/RM_prac/src/ros2_vfh -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RM_prac/install/ros2_vfh
+[0.869s] Invoking command in '/root/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /root/RM_prac/build/ros2_vfh -- -j20 -l20
+[0.898s] [ 33%] [32mBuilding CXX object CMakeFiles/vfh_node.dir/src/vfh_algorithm.cpp.o[0m
+[0.899s] [ 66%] [32mBuilding CXX object CMakeFiles/vfh_node.dir/src/vfh_node.cpp.o[0m
+[12.107s] [100%] [32m[1mLinking CXX executable vfh_node[0m
+[12.580s] [100%] Built target vfh_node
+[12.587s] Invoked command in '/root/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /root/RM_prac/build/ros2_vfh -- -j20 -l20
+[12.588s] Invoking command in '/root/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /root/RM_prac/build/ros2_vfh
+[12.593s] -- Install configuration: ""
+[12.594s] -- Execute custom install script
+[12.594s] -- Symlinking: /root/RM_prac/install/ros2_vfh/lib/ros2_vfh/vfh_node
+[12.600s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/launch/rviz2_map.launch.py
+[12.605s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/launch/rviz2_odom.launch.py
+[12.610s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/launch/vfh.launch.py
+[12.615s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/launch/vfh_coppeliasim.launch.py
+[12.620s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/launch/vfh_no_wandering.launch.py
+[12.625s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/rviz/tb3_map.rviz
+[12.631s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/rviz/tb3_odom.rviz
+[12.636s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/rviz/vfh_map.rviz
+[12.641s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/rviz/vfh_odom.rviz
+[12.646s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ament_index/resource_index/package_run_dependencies/ros2_vfh
+[12.652s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ament_index/resource_index/parent_prefix_path/ros2_vfh
+[12.656s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/environment/ament_prefix_path.sh
+[12.661s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/environment/ament_prefix_path.dsv
+[12.665s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/environment/path.sh
+[12.669s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/environment/path.dsv
+[12.673s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/local_setup.bash
+[12.677s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/local_setup.sh
+[12.681s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/local_setup.zsh
+[12.686s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/local_setup.dsv
+[12.690s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/package.dsv
+[12.695s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ament_index/resource_index/packages/ros2_vfh
+[12.698s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/cmake/ros2_vfhConfig.cmake
+[12.702s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/cmake/ros2_vfhConfig-version.cmake
+[12.706s] -- Symlinking: /root/RM_prac/install/ros2_vfh/share/ros2_vfh/package.xml
+[12.711s] Invoked command in '/root/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /root/RM_prac/build/ros2_vfh

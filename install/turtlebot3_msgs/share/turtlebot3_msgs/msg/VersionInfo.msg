@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/turtlebot3_msgs/msg/VersionInfo.msg
+/root/RM_prac/src/turtlebot3_msgs/msg/VersionInfo.msg

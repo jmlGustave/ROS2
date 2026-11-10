@@ -1,8 +1,8 @@
-# Install script for directory: /home/vboxuser/RM_prac/build/pure_pursuit_pkg/pure_pursuit_pkg__py
+# Install script for directory: /root/RM_prac/build/pure_pursuit_pkg/pure_pursuit_pkg__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vboxuser/RM_prac/install/pure_pursuit_pkg")
+  set(CMAKE_INSTALL_PREFIX "/root/RM_prac/install/pure_pursuit_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

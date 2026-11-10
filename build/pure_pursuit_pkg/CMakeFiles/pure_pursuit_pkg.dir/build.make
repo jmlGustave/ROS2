@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/pure_pursuit_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/pure_pursuit_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/pure_pursuit_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/pure_pursuit_pkg
 
 # Utility rule file for pure_pursuit_pkg.
 
@@ -66,7 +66,7 @@ include CMakeFiles/pure_pursuit_pkg.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/pure_pursuit_pkg.dir/progress.make
 
-CMakeFiles/pure_pursuit_pkg: /home/vboxuser/RM_prac/src/pure_pursuit_pkg/msg/WayPointPath.msg
+CMakeFiles/pure_pursuit_pkg: /root/RM_prac/src/pure_pursuit_pkg/msg/WayPointPath.msg
 CMakeFiles/pure_pursuit_pkg: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/pure_pursuit_pkg: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/pure_pursuit_pkg: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -143,6 +143,6 @@ CMakeFiles/pure_pursuit_pkg.dir/clean:
 .PHONY : CMakeFiles/pure_pursuit_pkg.dir/clean
 
 CMakeFiles/pure_pursuit_pkg.dir/depend:
-	cd /home/vboxuser/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg/CMakeFiles/pure_pursuit_pkg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg/CMakeFiles/pure_pursuit_pkg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pure_pursuit_pkg.dir/depend
 

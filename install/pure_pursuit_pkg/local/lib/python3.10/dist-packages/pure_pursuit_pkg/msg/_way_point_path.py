@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_generator_py/pure_pursuit_pkg/msg/_way_point_path.py
+/root/RM_prac/build/pure_pursuit_pkg/rosidl_generator_py/pure_pursuit_pkg/msg/_way_point_path.py

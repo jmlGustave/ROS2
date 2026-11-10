@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c
+/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c

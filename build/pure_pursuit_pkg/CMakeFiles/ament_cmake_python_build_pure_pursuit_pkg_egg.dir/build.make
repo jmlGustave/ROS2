@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/pure_pursuit_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/pure_pursuit_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/pure_pursuit_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/pure_pursuit_pkg
 
 # Utility rule file for ament_cmake_python_build_pure_pursuit_pkg_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/compiler_de
 include CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg:
-	cd /home/vboxuser/RM_prac/build/pure_pursuit_pkg/ament_cmake_python/pure_pursuit_pkg && /usr/bin/python3 setup.py egg_info
+	cd /root/RM_prac/build/pure_pursuit_pkg/ament_cmake_python/pure_pursuit_pkg && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_pure_pursuit_pkg_egg: CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg
 ament_cmake_python_build_pure_pursuit_pkg_egg: CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/depend:
-	cd /home/vboxuser/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg/CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg/CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_pure_pursuit_pkg_egg.dir/depend
 

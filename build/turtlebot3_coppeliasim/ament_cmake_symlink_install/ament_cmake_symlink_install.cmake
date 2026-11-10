@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/turtlebot3_coppeliasim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/vboxuser/RM_prac/install/turtlebot3_coppeliasim/${destination}")
+      set(destination "/root/RM_prac/install/turtlebot3_coppeliasim/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,49 +316,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "param" "scenes" "rviz" "urdf" "models" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" DIRECTORY "launch" "param" "scenes" "rviz" "urdf" "models" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/turtlebot3_coppeliasim" DIRECTORY "launch" "param" "scenes" "rviz" "urdf" "models" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_coppeliasim/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_coppeliasim")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_coppeliasim" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig.cmake" "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig-version.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig.cmake" "/home/vboxuser/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig-version.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
+# install(FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig.cmake" "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig-version.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig.cmake" "/root/RM_prac/build/turtlebot3_coppeliasim/ament_cmake_core/turtlebot3_coppeliasimConfig-version.cmake" "DESTINATION" "share/turtlebot3_coppeliasim/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim/package.xml" "DESTINATION" "share/turtlebot3_coppeliasim")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim" FILES "/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim/package.xml" "DESTINATION" "share/turtlebot3_coppeliasim")
+# install(FILES "/root/RM_prac/src/turtlebot3_coppeliasim/package.xml" "DESTINATION" "share/turtlebot3_coppeliasim")
+ament_cmake_symlink_install_files("/root/RM_prac/src/turtlebot3_coppeliasim" FILES "/root/RM_prac/src/turtlebot3_coppeliasim/package.xml" "DESTINATION" "share/turtlebot3_coppeliasim")

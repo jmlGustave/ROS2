@@ -1,12 +1,12 @@
 {
   "package_name": "turtlebot3_msgs",
   "non_idl_tuples": [
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:msg/SensorState.msg",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:msg/Sound.msg",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:msg/VersionInfo.msg",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:srv/Sound.srv",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:srv/Dqn.srv",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:srv/Goal.srv",
-    "/home/vboxuser/RM_prac/src/turtlebot3_msgs:action/Patrol.action"
+    "/root/RM_prac/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/root/RM_prac/src/turtlebot3_msgs:msg/Sound.msg",
+    "/root/RM_prac/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/root/RM_prac/src/turtlebot3_msgs:srv/Sound.srv",
+    "/root/RM_prac/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/root/RM_prac/src/turtlebot3_msgs:srv/Goal.srv",
+    "/root/RM_prac/src/turtlebot3_msgs:action/Patrol.action"
   ]
 }

@@ -1,8 +1,8 @@
-# Install script for directory: /home/vboxuser/RM_prac/src/transformations_pkg
+# Install script for directory: /root/RM_prac/src/transformations_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vboxuser/RM_prac/install/transformations_pkg")
+  set(CMAKE_INSTALL_PREFIX "/root/RM_prac/install/transformations_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/vboxuser/RM_prac/build/transformations_pkg/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/root/RM_prac/build/transformations_pkg/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vboxuser/RM_prac/build/transformations_pkg/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/RM_prac/build/transformations_pkg/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

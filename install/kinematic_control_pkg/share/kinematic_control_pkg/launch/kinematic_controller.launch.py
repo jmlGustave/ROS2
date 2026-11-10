@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/kinematic_control_pkg/launch/kinematic_controller.launch.py
+/root/RM_prac/src/kinematic_control_pkg/launch/kinematic_controller.launch.py

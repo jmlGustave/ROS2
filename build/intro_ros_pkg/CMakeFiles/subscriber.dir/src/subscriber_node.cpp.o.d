@@ -1,5 +1,5 @@
 CMakeFiles/subscriber.dir/src/subscriber_node.cpp.o: \
- /home/vboxuser/RM_prac/src/intro_ros_pkg/src/subscriber_node.cpp \
+ /root/RM_prac/src/intro_ros_pkg/src/subscriber_node.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/turtlebot3_msgs
+CMAKE_SOURCE_DIR = /root/RM_prac/src/turtlebot3_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/turtlebot3_msgs
+CMAKE_BINARY_DIR = /root/RM_prac/build/turtlebot3_msgs
 
 # Utility rule file for turtlebot3_msgs__rs.
 
@@ -171,8 +171,8 @@ rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/humble/share/geome
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vboxuser/RM_prac/build/turtlebot3_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/RM_prac/build/turtlebot3_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
+	cd /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /root/RM_prac/build/turtlebot3_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/turtlebot3_msgs/rust/build.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/build.rs
@@ -216,10 +216,10 @@ turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/build: turtlebot3_msgs__r
 .PHONY : turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/build
 
 turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/clean:
-	cd /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs && $(CMAKE_COMMAND) -P CMakeFiles/turtlebot3_msgs__rs.dir/cmake_clean.cmake
+	cd /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs && $(CMAKE_COMMAND) -P CMakeFiles/turtlebot3_msgs__rs.dir/cmake_clean.cmake
 .PHONY : turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/clean
 
 turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/depend:
-	cd /home/vboxuser/RM_prac/build/turtlebot3_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/turtlebot3_msgs /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs /home/vboxuser/RM_prac/build/turtlebot3_msgs /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/turtlebot3_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/turtlebot3_msgs /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs /root/RM_prac/build/turtlebot3_msgs /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/depend
 

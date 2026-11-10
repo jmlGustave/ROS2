@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/slam_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/vboxuser/RM_prac/install/slam_pkg/${destination}")
+      set(destination "/root/RM_prac/install/slam_pkg/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,49 +316,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "amcl_odom" "DESTINATION" "lib/slam_pkg")
-include("/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/root/RM_prac/build/slam_pkg/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/slam_pkg" DIRECTORY "launch" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/slam_pkg" DIRECTORY "launch" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/slam_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/slam_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/slam_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/slam_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/slam_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/slam_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/slam_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/slam_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/slam_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/slam_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/slam_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/slam_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/slam_pkg/environment")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/slam_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/slam_pkg/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/slam_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/slam_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/slam_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/slam_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/slam_pkg/environment")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/slam_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/slam_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/slam_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/packages/slam_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/packages/slam_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/packages/slam_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_index/share/ament_index/resource_index/packages/slam_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake" "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig-version.cmake" "DESTINATION" "share/slam_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake" "/home/vboxuser/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig-version.cmake" "DESTINATION" "share/slam_pkg/cmake")
+# install(FILES "/root/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake" "/root/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig-version.cmake" "DESTINATION" "share/slam_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig.cmake" "/root/RM_prac/build/slam_pkg/ament_cmake_core/slam_pkgConfig-version.cmake" "DESTINATION" "share/slam_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/src/slam_pkg/package.xml" "DESTINATION" "share/slam_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/slam_pkg" FILES "/home/vboxuser/RM_prac/src/slam_pkg/package.xml" "DESTINATION" "share/slam_pkg")
+# install(FILES "/root/RM_prac/src/slam_pkg/package.xml" "DESTINATION" "share/slam_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/slam_pkg" FILES "/root/RM_prac/src/slam_pkg/package.xml" "DESTINATION" "share/slam_pkg")

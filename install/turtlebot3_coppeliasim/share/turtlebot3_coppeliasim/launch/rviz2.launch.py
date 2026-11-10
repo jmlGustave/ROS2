@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim/launch/rviz2.launch.py
+/root/RM_prac/src/turtlebot3_coppeliasim/launch/rviz2.launch.py

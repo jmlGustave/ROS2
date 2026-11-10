@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/ros2_vfh/launch/rviz2_map.launch.py
+/root/RM_prac/src/ros2_vfh/launch/rviz2_map.launch.py

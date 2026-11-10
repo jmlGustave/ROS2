@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs
-# Build directory: /home/vboxuser/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs
+# Source directory: /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs
+# Build directory: /root/RM_prac/build/turtlebot3_msgs/turtlebot3_msgs__rs
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

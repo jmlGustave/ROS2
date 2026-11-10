@@ -156,7 +156,7 @@ class DQNAgent(Node):
         self.epsilon_decay = self.get_parameter(
             'epsilon_decay'
         ).get_parameter_value().integer_value
-        self.epsilon_min = 0.05
+        self.epsilon_min = 0.01
         self.batch_size = 128
 
         self.replay_memory = collections.deque(maxlen=500000)

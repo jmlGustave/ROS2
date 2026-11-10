@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/kinematic_control_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/kinematic_control_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/kinematic_control_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/kinematic_control_pkg
 
 # Utility rule file for kinematic_control_pkg.
 
@@ -66,7 +66,7 @@ include CMakeFiles/kinematic_control_pkg.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/kinematic_control_pkg.dir/progress.make
 
-CMakeFiles/kinematic_control_pkg: /home/vboxuser/RM_prac/src/kinematic_control_pkg/msg/Reference.msg
+CMakeFiles/kinematic_control_pkg: /root/RM_prac/src/kinematic_control_pkg/msg/Reference.msg
 CMakeFiles/kinematic_control_pkg: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/kinematic_control_pkg: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/kinematic_control_pkg: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -143,6 +143,6 @@ CMakeFiles/kinematic_control_pkg.dir/clean:
 .PHONY : CMakeFiles/kinematic_control_pkg.dir/clean
 
 CMakeFiles/kinematic_control_pkg.dir/depend:
-	cd /home/vboxuser/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/src/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg /home/vboxuser/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/kinematic_control_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/src/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg /root/RM_prac/build/kinematic_control_pkg/CMakeFiles/kinematic_control_pkg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kinematic_control_pkg.dir/depend
 

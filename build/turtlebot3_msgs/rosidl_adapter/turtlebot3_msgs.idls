@@ -1,7 +1,7 @@
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Goal.idl
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Goal.idl
+/root/RM_prac/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/RM_prac/src/pure_pursuit_pkg
+CMAKE_SOURCE_DIR = /root/RM_prac/src/pure_pursuit_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/RM_prac/build/pure_pursuit_pkg
+CMAKE_BINARY_DIR = /root/RM_prac/build/pure_pursuit_pkg
 
 # Utility rule file for ament_cmake_python_symlink_pure_pursuit_pkg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg:
-	/usr/bin/cmake -E create_symlink /home/vboxuser/RM_prac/build/pure_pursuit_pkg/rosidl_generator_py/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg/ament_cmake_python/pure_pursuit_pkg/pure_pursuit_pkg
+	/usr/bin/cmake -E create_symlink /root/RM_prac/build/pure_pursuit_pkg/rosidl_generator_py/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg/ament_cmake_python/pure_pursuit_pkg/pure_pursuit_pkg
 
 ament_cmake_python_symlink_pure_pursuit_pkg: CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg
 ament_cmake_python_symlink_pure_pursuit_pkg: CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/depend:
-	cd /home/vboxuser/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/src/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg /home/vboxuser/RM_prac/build/pure_pursuit_pkg/CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/RM_prac/build/pure_pursuit_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/src/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg /root/RM_prac/build/pure_pursuit_pkg/CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_pure_pursuit_pkg.dir/depend
 

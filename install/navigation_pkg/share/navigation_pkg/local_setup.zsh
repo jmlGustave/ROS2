@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/navigation_pkg/ament_cmake_environment_hooks/local_setup.zsh
+/root/RM_prac/build/navigation_pkg/ament_cmake_environment_hooks/local_setup.zsh

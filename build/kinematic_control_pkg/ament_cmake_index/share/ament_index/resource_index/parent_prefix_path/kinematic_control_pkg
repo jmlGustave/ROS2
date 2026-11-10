@@ -1,1 +1,1 @@
-/opt/ros/humble
+/root/RM_prac/install/upv_maps_pkg:/root/RM_prac/install/turtlebot3_dqn:/root/RM_prac/install/maintenance_mode_pkg:/root/RM_prac/install/turtlebot3_msgs:/root/RM_prac/install/turtlebot3_coppeliasim:/root/RM_prac/install/transformations_pkg:/root/RM_prac/install/slam_pkg:/root/RM_prac/install/ros2_vfh:/root/RM_prac/install/pure_pursuit_pkg:/root/RM_prac/install/navigation_pkg:/root/RM_prac/install/kinematic_control_pkg:/root/RM_prac/install/intro_ros_pkg:/root/RM_prac/install/bringup_turtlebot3_pkg:/opt/ros/humble

@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/turtlebot3_msgs/ament_cmake_environment_hooks/local_setup.sh
+/root/RM_prac/build/turtlebot3_msgs/ament_cmake_environment_hooks/local_setup.sh

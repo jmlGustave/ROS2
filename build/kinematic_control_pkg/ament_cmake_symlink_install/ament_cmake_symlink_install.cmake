@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vboxuser/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/root/RM_prac/install/kinematic_control_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/vboxuser/RM_prac/install/kinematic_control_pkg/${destination}")
+      set(destination "/root/RM_prac/install/kinematic_control_pkg/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,131 +315,131 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_c/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/" "DESTINATION" "include/kinematic_control_pkg/kinematic_control_pkg" "PATTERN" "*.hpp")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_python/kinematic_control_pkg/kinematic_control_pkg.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_python/kinematic_control_pkg/kinematic_control_pkg.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_python/kinematic_control_pkg/kinematic_control_pkg.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_python/kinematic_control_pkg/kinematic_control_pkg.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg")
-include("/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/root/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg")
-include("/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/root/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "kinematic_control_pkg__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/kinematic_control_pkg")
-include("/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/root/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rust_packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rust_packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rust_packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/rust_packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/rust_packages")
 
-# install(DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust" "DESTINATION" "share/kinematic_control_pkg")
+# install(DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_adapter/kinematic_control_pkg/msg/Reference.idl" "DESTINATION" "share/kinematic_control_pkg/msg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_adapter/kinematic_control_pkg/msg/Reference.idl" "DESTINATION" "share/kinematic_control_pkg/msg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_adapter/kinematic_control_pkg/msg/Reference.idl" "DESTINATION" "share/kinematic_control_pkg/msg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_adapter/kinematic_control_pkg/msg/Reference.idl" "DESTINATION" "share/kinematic_control_pkg/msg")
 
-# install(FILES "/home/vboxuser/RM_prac/src/kinematic_control_pkg/msg/Reference.msg" "DESTINATION" "share/kinematic_control_pkg/msg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/src/kinematic_control_pkg/msg/Reference.msg" "DESTINATION" "share/kinematic_control_pkg/msg")
+# install(FILES "/root/RM_prac/src/kinematic_control_pkg/msg/Reference.msg" "DESTINATION" "share/kinematic_control_pkg/msg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/src/kinematic_control_pkg/msg/Reference.msg" "DESTINATION" "share/kinematic_control_pkg/msg")
 
 # install("TARGETS" "controller_odom" "infinite_reference_node" "DESTINATION" "lib/kinematic_control_pkg")
-include("/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/root/RM_prac/build/kinematic_control_pkg/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "msg" "launch" "rviz" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_directory("/home/vboxuser/RM_prac/src/kinematic_control_pkg" DIRECTORY "msg" "launch" "rviz" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_directory("/root/RM_prac/src/kinematic_control_pkg" DIRECTORY "msg" "launch" "rviz" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/kinematic_control_pkg/environment")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/kinematic_control_pkg")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_index/share/ament_index/resource_index/packages/kinematic_control_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig.cmake" "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig-version.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig.cmake" "/home/vboxuser/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig-version.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+# install(FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig.cmake" "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig-version.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig.cmake" "/root/RM_prac/build/kinematic_control_pkg/ament_cmake_core/kinematic_control_pkgConfig-version.cmake" "DESTINATION" "share/kinematic_control_pkg/cmake")
 
-# install(FILES "/home/vboxuser/RM_prac/src/kinematic_control_pkg/package.xml" "DESTINATION" "share/kinematic_control_pkg")
-ament_cmake_symlink_install_files("/home/vboxuser/RM_prac/src/kinematic_control_pkg" FILES "/home/vboxuser/RM_prac/src/kinematic_control_pkg/package.xml" "DESTINATION" "share/kinematic_control_pkg")
+# install(FILES "/root/RM_prac/src/kinematic_control_pkg/package.xml" "DESTINATION" "share/kinematic_control_pkg")
+ament_cmake_symlink_install_files("/root/RM_prac/src/kinematic_control_pkg" FILES "/root/RM_prac/src/kinematic_control_pkg/package.xml" "DESTINATION" "share/kinematic_control_pkg")

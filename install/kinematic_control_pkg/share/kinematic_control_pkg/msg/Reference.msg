@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/kinematic_control_pkg/msg/Reference.msg
+/root/RM_prac/src/kinematic_control_pkg/msg/Reference.msg

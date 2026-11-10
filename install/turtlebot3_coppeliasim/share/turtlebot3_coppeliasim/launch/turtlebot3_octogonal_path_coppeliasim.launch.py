@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim/launch/turtlebot3_octogonal_path_coppeliasim.launch.py
+/root/RM_prac/src/turtlebot3_coppeliasim/launch/turtlebot3_octogonal_path_coppeliasim.launch.py

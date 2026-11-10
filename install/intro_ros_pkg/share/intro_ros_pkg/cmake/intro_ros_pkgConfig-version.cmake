@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/intro_ros_pkg/ament_cmake_core/intro_ros_pkgConfig-version.cmake
+/root/RM_prac/build/intro_ros_pkg/ament_cmake_core/intro_ros_pkgConfig-version.cmake

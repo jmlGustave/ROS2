@@ -1,0 +1,276 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-97497bf9f082c2baa1d0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "kinematic_control_pkg__py",
+					"jsonFile" : "directory-kinematic_control_pkg__py-8281f0bea5886f50bc55.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "kinematic_control_pkg__rs",
+					"jsonFile" : "directory-kinematic_control_pkg__rs-8200ea292c9cdb123bbd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/RM_prac/build/kinematic_control_pkg/kinematic_control_pkg__rs",
+					"targetIndexes" : 
+					[
+						18
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "kinematic_control_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_kinematic_control_pkg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_kinematic_control_pkg_egg-37871ad50244cb2bca5d.json",
+					"name" : "ament_cmake_python_build_kinematic_control_pkg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_kinematic_control_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_kinematic_control_pkg-6df2eabfe8cd9f502544.json",
+					"name" : "ament_cmake_python_symlink_kinematic_control_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_odom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_odom-df3aaf58af12171f9001.json",
+					"name" : "controller_odom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "infinite_reference_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-infinite_reference_node-1a5e3b85f06c4c54e251.json",
+					"name" : "infinite_reference_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg-cb10c3b41a332b7a041b.json",
+					"name" : "kinematic_control_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__cpp-91f472c7eaa5efc97a8c.json",
+					"name" : "kinematic_control_pkg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "kinematic_control_pkg__py::@ffdb975ffb49273fbb6f",
+					"jsonFile" : "target-kinematic_control_pkg__py-4f2b70cc8510e682b56e.json",
+					"name" : "kinematic_control_pkg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_generator_c-cc3acb321ca7e21afd37.json",
+					"name" : "kinematic_control_pkg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_generator_py-1a262dccfa68c3d4e828.json",
+					"name" : "kinematic_control_pkg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_c-a1147eeeecb1ec85774b.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_c__pyext-42046e83d9f52dbb5538.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_cpp-8c36537ad213b592ce85.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_fastrtps_c-499a4cae4c8172aabcde.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext-25d90d2ef1a3a5f8553f.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp-e89a30fc2149360fdbad.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_introspection_c-de4b5f8fa77804cf004d.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext-5fe7447faf9ba20a2840.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg__rosidl_typesupport_introspection_cpp-abc71cd7f2ecd9ca9c53.json",
+					"name" : "kinematic_control_pkg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "kinematic_control_pkg__rs::@b68a12eaca29cecc11f6",
+					"jsonFile" : "target-kinematic_control_pkg__rs-64b9e1f3b83a71755466.json",
+					"name" : "kinematic_control_pkg__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinematic_control_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinematic_control_pkg_uninstall-f337e20678982959154d.json",
+					"name" : "kinematic_control_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e075b74de62981a87dff.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/RM_prac/build/kinematic_control_pkg",
+		"source" : "/root/RM_prac/src/kinematic_control_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

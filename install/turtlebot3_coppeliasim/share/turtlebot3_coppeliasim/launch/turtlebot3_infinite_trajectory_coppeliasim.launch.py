@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/turtlebot3_coppeliasim/launch/turtlebot3_infinite_trajectory_coppeliasim.launch.py
+/root/RM_prac/src/turtlebot3_coppeliasim/launch/turtlebot3_infinite_trajectory_coppeliasim.launch.py

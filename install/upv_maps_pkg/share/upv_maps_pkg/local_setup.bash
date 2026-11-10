@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/upv_maps_pkg/ament_cmake_environment_hooks/local_setup.bash
+/root/RM_prac/build/upv_maps_pkg/ament_cmake_environment_hooks/local_setup.bash

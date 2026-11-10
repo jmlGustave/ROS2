@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFASTCDR_DYN_LINK -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_FASTRTPS_CPP_BUILDING_DLL_kinematic_control_pkg -DROS_PACKAGE_NAME=\"kinematic_control_pkg\"
 
-CXX_INCLUDES = -I/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp -I/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces
+CXX_INCLUDES = -I/root/RM_prac/build/kinematic_control_pkg/rosidl_typesupport_fastrtps_cpp -I/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_cpp -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -Wredundant-decls -std=gnu++14
 

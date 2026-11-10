@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust/build.rs
+/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_rs/kinematic_control_pkg/rust/build.rs

@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/slam_pkg/launch/cartographer.launch.py
+/root/RM_prac/src/slam_pkg/launch/cartographer.launch.py

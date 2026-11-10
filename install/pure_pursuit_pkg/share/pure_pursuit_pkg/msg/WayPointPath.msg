@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/src/pure_pursuit_pkg/msg/WayPointPath.msg
+/root/RM_prac/src/pure_pursuit_pkg/msg/WayPointPath.msg

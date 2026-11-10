@@ -1,1 +1,1 @@
-/home/vboxuser/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/__init__.py
+/root/RM_prac/build/kinematic_control_pkg/rosidl_generator_py/kinematic_control_pkg/__init__.py
